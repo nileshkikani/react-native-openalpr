@@ -42,8 +42,10 @@ static PlateScanner *scanner;
     
 }
 
+
 - (void) setCountry:(NSString *)country {
-    delegate->setCountry([country UTF8String]);
+     NSString *testString = @"in,in2";
+    delegate->setCountry([testString UTF8String]);
 }
 
 - (void)scanImage:(cv::Mat &)colorImage
